@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+#cabecalho {
+    background-color: #3B0BB5;
+    padding: 15px 50px;
+}
+
+#menu_principal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    height: 40px;
+    width: auto;
+}
+
+#menu {
+    list-style: none;
+    display: flex;
+    gap: 60px;
+}
+
+#menu a {
+    /*remove o sublinhado*/
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s;
+    /*espaçamento entre as letras*/
+    letter-spacing: 0.5px;
+}
+
+#menu a:hover {
+    opacity: 0.8;
+}
+
+.botao {
+    background-color: #00B894;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 6px;
+    font-weight: 700;
+    /*remove o sublinhado*/
+    text-decoration: none;
+    /*espaçamento entre as letras*/
+    letter-spacing: 0.5px;
+    transition: 0.3s;
+    white-space: nowrap;
+}
+
+.botao:hover {
+    opacity: 0.9;
+}
+.banda {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 270px;
+    padding: 30px 50px;
+    border-radius: 10px;
+    margin-top: 0;
+    
+}
+
+h1 {
+    text-align: center;
+    margin: 40px 0 20px 0;
+}
+
+.cache {
+    margin-top: 50px;       
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;     
+}
+
+.valor {
+    color: #3A0CA3;
+}
+
+.imagem_banda img {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.estilo_da_banda {
+    font-family: 'Poppins', sans-serif;
+}
+
+.estilo_da_banda p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.redes_sociais {
+    margin-top: 15px;
+    display: flex;
+    gap: 15px;          
+}
+
+.redes_sociais a {
+    color: #030303;     
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.botao_whatsapp {
+    margin-top: 150px;
+    text-align: center; 
+}
+
+.botao_whatsapp a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;              
+    background-color: #04A777; 
+    color: white;
+    padding: 12px 25px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.botao_whatsapp a:hover {
+    opacity: 0.9;
+}
+
+
+@media (max-width: 768px) {
+    #cabecalho {
+        padding: 15px 20px;
+    }
+
+    #menu_principal {
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .logo {
+        flex: 1 1 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .logo img {
+        height: 35px;
+    }
+
+    #menu {
+        gap: 20px;
+        order: 2;
+    }
+
+    #menu a {
+        font-size: 14px;
+    }
+
+    .botao {
+        order: 3;
+        padding: 8px 20px;
+        font-size: 13px;
+    }
+
+   .banda {
+        flex-direction: column;  
+        gap: 30px;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .imagem_banda img {
+        width: 200px;
+    }
+
+    .estilo_da_banda p {
+        font-size: 15px;
+    }
+     .redes_sociais {
+        justify-content: center; 
+        gap: 20px;
+    }
+
+    .redes_sociais a {
+        font-size: 18px;        
+    }
+
+     .botao_whatsapp {
+        margin-top: 60px; 
+    }
+
+    .botao_whatsapp a {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
